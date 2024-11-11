@@ -34,6 +34,7 @@ phoneNumberInput = document.getElementById("student_phone");
 
 let projectsContainer = document.getElementById("projcts_Container");
 let projectsCartsContainer = document.getElementById("items_container");
+let finish_btn = document.getElementById("finish_btn");
 
 
 let projectSkills = document.querySelectorAll(".skillsBox");
@@ -65,7 +66,6 @@ for(let skill of projectSkills ){
         if(skill.checked == true){
 
             skillsArray.push(skill.value);
-            alert(skillsArray + ` the ${skill.value} Added Successfully`)
 
         
         }else{
@@ -73,8 +73,6 @@ for(let skill of projectSkills ){
             let index = skillsArray.indexOf(skill.value);
 
             skillsArray.splice(index,1);
-            
-            alert(skillsArray + ` the ${skill.value} Removed Successfully`)
 
         }
 
@@ -185,11 +183,12 @@ function saveData() {
 
         let newProject = new Projects(projectName, projectLink, skillsArray, projectDate);
 
+        finish_btn.style.display = "inline-block";
+
         CurrentStudent.Projects.push(newProject);
 
-        localStorage.setItem(`students${studentsTable.length - 1}`, JSON.stringify(CurrentStudent));
 
-        alert(`Project added successfully for ${CurrentStudent.studentName} ${CurrentStudent.studentSurname}`);
+        localStorage.setItem(`students${studentsTable.length - 1}`, JSON.stringify(CurrentStudent));
 
         let skillsContainer = `<ul class="skillsList">`;
         skillsArray.forEach(skill => {

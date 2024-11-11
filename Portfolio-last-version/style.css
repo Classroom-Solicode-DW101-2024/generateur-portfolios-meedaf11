@@ -398,3 +398,7 @@ p {
   width: 150px;
 
 }
+
+#finish_btn{
+  display: none;
+}
