@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page2">
+
+    
+
+        <div id="addStudentContainer2">
+
+            <form class="StudentForm">
+
+                <h1>Add Projects</h1>
+
+                <input type="text" placeholder="Project Name" name="projectName" id="projectName" class="form_inputs" required>
+
+                <input type="text" placeholder="GitHub Link" name="projectLink" id="projectLink" class="form_inputs" required>
+
+                <div class="inputs_container" id="skills_container">
+
+                    <div>
+                        <input type="checkbox" value="JavaScript" id="box_JS" name="skills" class="skillsBox">
+                        <label for="box_JS">JavaScript</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="HTML" id="box_html" name="skills" class="skillsBox">
+                        <label for="box_html">HTML</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="CSS" id="box_css" name="skills" class="skillsBox">
+                        <label for="box_css">CSS</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="Java" id="box_Java" name="skills" class="skillsBox">
+                        <label for="box_JS">Java</label>
+                    </div>
+                       
+                    
+                </div>
+
+                <div class="inputs_container" id="date_Container">
+                    <label for="projectDate">Project Creation Date:</label>
+                    <input type="date" id="projectDate" class="form_inputs" required>
+                </div>
+
+
+
+
+
+
+
+            </form>
+            <div class="btn_container">
+
+            <button class="submit_button" onclick="finish()">Finish</button>
+                
+            <button class="submit_button" onclick="saveData()">Save Project</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="projcts_Container">
+
+            
+            <h1>Projects</h1>
+
+            <div class="items_container" id="items_container">
+
+                
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

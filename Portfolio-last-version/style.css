@@ -1,0 +1,400 @@
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.page1 {
+  background-color: cornflowerblue;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.page2 {
+  background-color: cornflowerblue;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.page3 {
+  background-color: cornflowerblue;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+}
+
+
+#addStudentContainer {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 15px;
+  box-shadow: 4px 6px 9px black;
+}
+
+#addStudentContainer2 {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 15px;
+  box-shadow: 4px 6px 9px black;
+}
+
+.StudentForm {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.StudentForm input,
+select {
+  padding: 4px 10px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+  outline: none;
+}
+
+#submit_button {
+  width: 80%;
+  height: 40px;
+  margin: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+h1 {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputs_container {
+  display: flex;
+  justify-content: left;
+}
+
+#skills_container {
+  flex-wrap: wrap;
+  align-content: center;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.inputs_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+#addStudentContainer {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 15px;
+  box-shadow: 4px 6px 9px black;
+}
+
+.StudentForm {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.StudentForm input,
+select {
+  padding: 4px 10px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.btn_container {
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  height: 40px;
+  margin: 20px;
+}
+
+.submit_button {
+  width: 50%;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+h1 {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputs_container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#skills_container {
+  flex-wrap: wrap;
+  align-content: start;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.inputs_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+
+.inputs_container div input {
+  margin: 0;
+}
+
+#date_Container {
+  justify-content: space-between;
+  height: 40px;
+}
+
+#date_Container label {
+  width: 30%;
+}
+
+#date_Container input {
+  width: 70%;
+}
+
+
+#date_Container {
+  justify-content: space-between;
+  height: 40px;
+}
+
+#date_Container label {
+  width: 30%;
+}
+
+#date_Container input {
+  width: 70%;
+}
+
+.projcts_Container {
+
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  margin-left: 40px;
+  width: 40%;
+  padding: 15px;
+  box-shadow: 4px 6px 9px black;
+
+}
+
+.items_container {
+
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+
+}
+
+.project_item {
+
+  width: 40%;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 3px 9px black;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cart_project_name {
+  margin: 0;
+  text-align: center;
+}
+
+.GitHub_btn {
+  width: 80%;
+  background-color: cornflowerblue;
+  border: none;
+  height: 25px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.skillsList {
+  align-self: flex-start;
+}
+
+.cart_project_date {
+
+  margin: 5px 0 0 0;
+
+}
+
+.portfolio_student_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 40px;
+  background-color: white;
+  width: 85%;
+  border-radius: 6px;
+}
+
+.details_Container {
+  
+  width: 90%;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.details_Container img {
+
+  width: 40%;
+
+  max-width: 100%;
+
+}
+
+
+.content {
+  width: 75%;
+}
+
+.content div {
+
+  width: 75%;
+
+}
+
+.big_portfolio_text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 7px 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.contact_btn {
+  width: 120px;
+  background-color: cornflowerblue;
+  border: 0;
+  padding: 7px;
+  color: white;
+  margin: 15px 5px 15px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.portfolio_projects_container {
+
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+
+}
+
+.portfolio_projcts_Container {
+
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  width: 90%;
+  padding: 15px;
+
+}
+
+.portfolio_project_item {
+  margin-right: 15px;
+  width: 28%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 3px 9px black;
+  padding: 20px;
+  gap: 10px;
+
+}
+
+#btn_dpwnload{
+
+  width: 150px;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="page1">
+
+        <div id="addStudentContainer">
+
+            <form class="StudentForm">
+
+                    <h1>Student Portfolio</h1>
+
+                    <input type="text" placeholder="First Name" name="student_fName" id="student_fName" class="form_inputs" required>
+
+                    <input type="text" placeholder="Last Name" name="student_lName" id="student_lName" class="form_inputs" required>
+
+                    <input type="email" placeholder="Email" name="student_email" id="student_email" class="form_inputs" required>
+
+                    <input type="tel" placeholder="Phone Number" name="student_phone" id="student_phone" class="form_inputs" pattern="^(\\+212|00212)\\d{9}$" required>
+
+                    <select name="student_group" id="student_group" class="form_inputs" required>
+
+                        <option value="" disabled selected>Choose Your Group</option>
+                        <option value="dw_101">Group 101</option>
+                        <option value="dw_102">Group 102</option>
+                        <option value="dw_103">Group 103</option>
+                        <option value="dw_104">Group 104</option>
+
+                    </select>
+
+                   
+
+
+
+            </form>
+            <button id="submit_button" onclick="ContinueBtn()">Continue</button>
+
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
